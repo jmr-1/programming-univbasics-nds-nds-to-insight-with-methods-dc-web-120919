@@ -57,5 +57,6 @@ def gross_for_director_bypass(nds, director_counter)
 end
 
 def gross_for_director(nds)
+  puts "*starting GFD"
   puts nds 
 end
