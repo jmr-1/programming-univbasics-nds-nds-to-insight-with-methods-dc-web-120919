@@ -23,13 +23,13 @@ def directors_totals(nds)
     director_name = nds[director_counter][:name]
     
     total_value[director_name] = 0 #creates hash, sets to integer 
-    puts director_name
+    #puts director_name
     #prints director's name 
     
     total_value[director_name] = gross_for_director_bypass(nds, director_counter)
     
-    puts "Gross total: #{gross_for_director_bypass(nds, director_counter)}"
-    puts "**** \n"
+    #puts "Gross total: #{gross_for_director_bypass(nds, director_counter)}"
+    #puts "**** \n"
     
     director_counter += 1 
   end 
@@ -48,7 +48,7 @@ def gross_for_director_bypass(nds, director_counter)
       while movie_counter<nds[director_counter][:movies].length do 
       
       #print out values to check the loop works  
-      puts nds[director_counter][:movies][movie_counter][:worldwide_gross]
+      #puts nds[director_counter][:movies][movie_counter][:worldwide_gross]
       
       gross_total = gross_total + nds[director_counter][:movies][movie_counter][:worldwide_gross]
       movie_counter += 1 
