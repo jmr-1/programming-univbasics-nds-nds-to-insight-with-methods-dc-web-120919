@@ -61,5 +61,5 @@ def gross_for_director(nds)
   puts nds 
   
   i = 0 
-  puts nds[:movies][1]
+  puts nds[:movies][0][:worldwide_gross]
 end
