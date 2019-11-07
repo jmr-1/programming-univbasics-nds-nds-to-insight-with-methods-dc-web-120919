@@ -62,11 +62,12 @@ def gross_for_director(nds)
   gross_count = 0 
   i = 0 
   puts nds[:movies][0][:worldwide_gross]
+  puts nds[:movies].length 
   
-  while nds[:movies][i] < nds[:movies].length do
+  # while nds[:movies][i] < nds[:movies].length do
     
-    gross_count += nds[:movies][i][:worldwide_gross]
-    i+= 1 
-  end 
-  return gross_count 
+  #   gross_count += nds[:movies][i][:worldwide_gross]
+  #   i+= 1 
+  # end 
+  # return gross_count 
 end
