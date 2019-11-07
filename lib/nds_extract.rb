@@ -7,9 +7,6 @@ require 'directors_database'
 
 def directors_totals(nds)
   
-  #pp nds 
-  
-  #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
