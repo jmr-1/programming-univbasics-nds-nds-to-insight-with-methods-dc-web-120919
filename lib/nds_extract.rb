@@ -8,7 +8,7 @@ require 'directors_database'
 def directors_totals(nds)
   
   #pp nds 
-  total_value = {}
+  
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   #
@@ -19,6 +19,7 @@ def directors_totals(nds)
   # ...
   #after finding the correct line, follow the nested AoHoAoH 
   
+  total_value = {}
   director_counter = 0 
   
   while director_counter<nds.length do
