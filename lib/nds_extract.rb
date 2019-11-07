@@ -58,5 +58,10 @@ end
 
 def gross_for_director(nds)
   puts "*starting GFD"
-  puts nds 
+  #puts nds 
+  
+  i = 0 
+  while nds[:movies][i]< nds[:movies].length do 
+    puts nds[:movies][i]
+  end 
 end
