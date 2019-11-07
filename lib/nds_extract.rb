@@ -34,7 +34,7 @@ def directors_totals(nds)
     director_counter += 1 
   end 
   # Be sure to return the result at the end!
-  puts total_value
+  #puts total_value
   return total_value 
 end
 
