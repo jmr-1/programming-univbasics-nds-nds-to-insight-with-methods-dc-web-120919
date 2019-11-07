@@ -26,9 +26,9 @@ def directors_totals(nds)
     puts director_name
     #prints director's name 
     
-    total_value[director_name] = gross_for_director(nds, director_counter)
+    total_value[director_name] = gross_for_director_bypass(nds, director_counter)
     
-    puts "Gross total: #{gross_for_director(nds, director_counter)}"
+    puts "Gross total: #{gross_for_director_bypass(nds, director_counter)}"
     puts "**** \n"
     
     director_counter += 1 
@@ -42,7 +42,7 @@ end
 # using director_data as input
 
 #works, but needs to use only one input to pass test 
-def gross_for_director(nds, director_counter)
+def gross_for_director_bypass(nds, director_counter)
   gross_total = 0 
   movie_counter = 0 
       while movie_counter<nds[director_counter][:movies].length do 
