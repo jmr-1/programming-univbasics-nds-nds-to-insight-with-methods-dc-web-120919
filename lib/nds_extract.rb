@@ -55,3 +55,7 @@ def gross_for_director_bypass(nds, director_counter)
     end 
   return gross_total
 end
+
+def gross_for_director(nds)
+  puts nds 
+end
