@@ -43,6 +43,7 @@ end
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 
+#works, but needs to use only one input to pass test 
 def gross_for_director(nds, director_counter)
   gross_total = 0 
   movie_counter = 0 
