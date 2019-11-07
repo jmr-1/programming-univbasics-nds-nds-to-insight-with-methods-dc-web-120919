@@ -38,10 +38,7 @@ def directors_totals(nds)
   return total_value 
 end
 
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
-
-#works, but needs to use only one input to pass test 
+# same as below but specifically used with the loop counter in directors_totals
 def gross_for_director_bypass(nds, director_counter)
   gross_total = 0 
   movie_counter = 0 
@@ -56,15 +53,13 @@ def gross_for_director_bypass(nds, director_counter)
   return gross_total
 end
 
+#takes a specific director hash and returns the total of gross 
 def gross_for_director(nds)
   puts "*starting GFD"
   puts nds 
   gross_count = 0 
   i = 0 
-  puts nds[:movies][0][:worldwide_gross]
-  puts nds[:movies].length 
-  puts "**test**"
-  
+
   while i < nds[:movies].length do
     
     gross_count += nds[:movies][i][:worldwide_gross]
